@@ -44,7 +44,7 @@ jobs:
             wait-on: http://localhost:5000
 
 
-      - name: deploye to heroku
+      - name: deploy to heroku
         uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
