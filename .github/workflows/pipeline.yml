@@ -30,9 +30,6 @@ jobs:
       - name: lint
         run: npm run eslint
 
-      - name: Directory location
-        run: ls -l
-
       - name: build
         run: npm run build
 
