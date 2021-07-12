@@ -32,3 +32,9 @@ jobs:
 
       - name: Directory location
         run: ls -l
+
+      - name: build
+        run: npm run build
+
+      - name: test
+        run: npm run test
