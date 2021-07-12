@@ -44,9 +44,9 @@ jobs:
             wait-on: http://localhost:5000
 
         name: Deploy
-        uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
+        uses: akhileshns/heroku-deploy@v3.12.12
             with:
               heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-              heroku_app_name: "pokedex-practice" #Must be unique in Heroku
+              heroku_app_name: "pokedex-practice"
               heroku_email: "salonen.markus@gmail.com"
         
