@@ -23,3 +23,9 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo Hello World!
+
+      - name: Now it is
+        run: date
+
+      - name: Directory location
+        run: ls -l
