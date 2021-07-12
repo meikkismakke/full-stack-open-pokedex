@@ -1,7 +1,5 @@
 import { useEffect, useState } from 'react'
 import axios from 'axios'
-const express = require('express')
-const app = express()
 
 const useApi = (url, mapResults = (result) => result) => {
   const [data, setData] = useState()
@@ -15,10 +13,6 @@ const useApi = (url, mapResults = (result) => result) => {
       .catch(setError)
       .finally(() => setIsLoading(false))
   }, [url])
-
-  app.get('/health', (req, res) => {
-    res.send('ok')
-  })
 
   return { data, isLoading, error }
 }
