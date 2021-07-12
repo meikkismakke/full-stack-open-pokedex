@@ -17,8 +17,4 @@ const useApi = (url, mapResults = (result) => result) => {
   return { data, isLoading, error }
 }
 
-app.get('/health', (req, res) => {
-  res.send('ok')
-})
-
 export { useApi }
